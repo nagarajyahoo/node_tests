@@ -1,4 +1,4 @@
-const utils = require('../utils/utils');
+const utils = require('../../utils/utils');
 const expect = require('expect');
 
 it('should add 2 numbers', function () {
