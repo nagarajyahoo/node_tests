@@ -8,10 +8,17 @@ var setName = (user, fullName) => {
     return user;
 };
 
+var asyncAdd = (a, b, callback) => {
+    setTimeout(() => {
+        callback(a + b);
+    }, 1000);
+};
+
 module.exports = {
     add: add,
     square: square,
-    setName : setName
+    setName: setName,
+    asyncAdd : asyncAdd
 };
 
 

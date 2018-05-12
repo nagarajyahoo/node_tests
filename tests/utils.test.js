@@ -38,3 +38,10 @@ it('Splitting and setting name', () => {
         firstName: "firstName"
     });
 });
+
+it('Testing async add', (done) => {
+    utils.asyncAdd(2, 3, (res) => {
+        expect(res).toEqual(5);
+        done();
+    })
+});
